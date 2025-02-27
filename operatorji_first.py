@@ -25,6 +25,34 @@
 #print(range(12))
 #a = range(12, 5, -2)
 #print(a)  #this is not working
-for i in range(10):
-    print("*", end=" ")
+#for i in range(10):
+#    print("*", end=" ")
 #this finally works
+
+#if sentences
+#a = 9
+#b = 14
+#if a > 12 or b == 42:
+#    f()
+#elif a < 0 or b == 2:
+#    g()
+#elif a > 10:
+#    h()
+#else:
+#    j()
+#the above does not work - i couldn't get it to work
+
+#while sentences
+#i = 1
+#while i <= 10:
+#    print(i)
+#    i += 1 #beware running the program without this line
+#this works very well
+
+#s = ([1, 2, 3, 4, 5, 10])
+#for i in range(len(s)):
+#    print(s[i])
+
+#for e in s:
+#    print(e)
+#end of day. "for" loop is doing me problems when reading through the material. I am at page 32 to 34 right now.
