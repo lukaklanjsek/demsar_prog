@@ -130,4 +130,4 @@ print(a, a2)  #question: why is it a2 and not a1? how does a2 work
 #how does 'return' work ?
 
 #EXERCISES
-#euclid highest common divider
+#euclid highest common divider     ##break, change environment grab the math book and pen and paper
