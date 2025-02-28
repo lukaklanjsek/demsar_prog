@@ -131,6 +131,5 @@ print(a, a2)  #question: why is it a2 and not a1? how does a2 work
 
 #EXERCISES
 #euclid highest common divider     ##break, change environment grab the math book and pen and paper
-def euclid(m, n):
-    if m // n == 0
-        
+def euclid(a, b):
+    if
