@@ -105,3 +105,29 @@ for i in range(100):
 else:   #also question: why is this in line with 'for' and not 'if'?
     print("no pass")
 ## surprise
+
+#lets check out net example, claiming to call an url page
+import urllib.request
+for i in range(5):         #again a random 'i' in here, what for???
+    try:
+        r = urllib.request.urlopen(url) .read()    #what is now 'r' ???
+        break
+    except:
+        pass
+else:
+    print("nothing ever works")
+
+
+#lets try fibonacci again, this time with a twist
+#1. example code:
+def fibonacci(n):
+    a = b = 1
+    for i in range(n):
+        a, b = b, a + b
+    return a, a**2  #okay lets go
+a, a2 = fibonacci(10)    #after aligning this line with 'def', the code prints out result
+print(a, a2)  #question: why is it a2 and not a1? how does a2 work
+#how does 'return' work ?
+
+#EXERCISES
+#euclid highest common divider
