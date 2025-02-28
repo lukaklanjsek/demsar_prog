@@ -56,3 +56,28 @@
 #for e in s:
 #    print(e)
 #end of day. "for" loop is doing me problems when reading through the material. I am at page 32 to 34 right now.
+
+s = [(1), (2), (3), (4), (5), (6), (7), (8), (9)]
+#naj_i = naj_e = -1
+#for i, e in enumerate(s):  #defining "s"
+#    if i < 0 or naj_e < e:
+#        naj_i, naj_e = i, e
+        #giving this a pause and running alternative first
+#alternative:
+naj = None
+for ie in enumerate(s): #using definition "s" from earlier
+    if naj is None or naj[1] < ie[1]:
+        naj = ie
+print(naj[0])
+print(naj[1])
+## this finally prints resulting in: 1 and (7, 8, 9) so noa i am reconfiguring the definintion of "s" again
+### i dont know why but i had to put ever y number in that list into ()
+a = ("Miran") #i only copy-pasted the code from above:
+naj = None
+for ie in enumerate(a):
+    if naj is None or naj[1] < ie[1]:
+        naj = ie
+print(ie)  #this doesnt work at first  a->ie  --> this throws out result: (4, 'n') I guess it works, now trying to enumerate in console
+#no, something does not work in console, which differs from what the suggestion does in the book
+
+
