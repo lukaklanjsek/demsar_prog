@@ -80,4 +80,3 @@ for ie in enumerate(a):
 print(ie)  #this doesnt work at first  a->ie  --> this throws out result: (4, 'n') I guess it works, now trying to enumerate in console
 #no, something does not work in console, which differs from what the suggestion does in the book
 
-
