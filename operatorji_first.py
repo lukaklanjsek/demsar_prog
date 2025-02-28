@@ -80,3 +80,28 @@ for ie in enumerate(a):
 print(ie)  #this doesnt work at first  a->ie  --> this throws out result: (4, 'n') I guess it works, now trying to enumerate in console
 #no, something does not work in console, which differs from what the suggestion does in the book
 
+s = ["Miran", "Miha", "Mitja"]
+for e in "Miran":  #interesting, i dont know why this works
+    print(e, ord(e)) #"ord" returns Unicode code point for one character string
+
+pass
+for i in range(10):
+    print(i)
+for i in range(6, 11):
+    print(i)
+
+for e in s: #here I would need an explanation what is 'e'
+    print(e)
+
+#for a while   #just messing around sorry
+#    else pass
+
+a = b = 1  #is any of the first 100 fibonacci numbers dividable by 1131
+for i in range(100):
+    if a % 1131 == 0:
+        print(a, "is possible")
+        break
+    a, b = b, a+b  #why is this fibonacci rule after the print(a) and break line ???
+else:   #also question: why is this in line with 'for' and not 'if'?
+    print("no pass")
+## surprise
