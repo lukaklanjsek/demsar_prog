@@ -157,6 +157,5 @@ while d != 0:
         d -= 1
 for results_a in results_b:
     results.append(i)
-print(i)
-#something works, but unsure why
-#it doesnt work, always throws out "4"
+print(results)
+#something works, but unsure why  #it doesnt work, always throws out "4"  ##still doesnt work, but it throws out something
