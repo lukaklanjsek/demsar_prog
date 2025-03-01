@@ -131,5 +131,30 @@ print(a, a2)  #question: why is it a2 and not a1? how does a2 work
 
 #EXERCISES
 #euclid highest common divider     ##break, change environment grab the math book and pen and paper
-def euclid(a, b):
-    if
+
+
+
+
+#def euclid(a, b):  #for the start, this function will have to await
+#    if
+#hi im back, got distracted a bit
+a = c = 120
+b = d = 113
+results_a = []
+results_b = []
+results = []
+while c != 0:
+    if a % c == 0:
+        results_a.append(c)
+        c -= 1
+    else:
+        c -= 1
+while d != 0:
+    if b % d == 0:
+        results_b.append(d)
+        d -= 1
+    else:
+        d -= 1
+for results_a in results_b:
+    results.append(i)
+print(i)
