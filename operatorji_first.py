@@ -138,8 +138,8 @@
 #def euclid(a, b):  #for the start, this function will have to await
 #    if
 #hi im back, got distracted a bit
-a = c = 120
-b = d = 96
+a = c = 144
+b = d = 60
 results_a = []
 results_b = []
 results = []
@@ -155,7 +155,22 @@ while d != 0:
         d -= 1
     else:
         d -= 1
-for i in (results_a and results_b):  #how to add logic into this line ##maybe 'and' will work
-    results.append(i)
-print(results)
+for i in results_a:
+    for f in results_b:  #how to add logic into this line
+        if i == f:
+            results.append(i)
+print(results[0])  #finally got working showing only the first input into the results list
 #something works, but unsure why  #it doesnt work, always throws out "4"  ##still doesnt work, but it throws out something
+
+# perfect numbers
+
+#import math
+
+#n = 91
+#math.sqrt(n) == a   #to ni vredu
+#def prastevilo(n):
+#    for a in range(n):
+#        if n % a != 0:    #here the logic needs rewording
+#            a -= 1
+#
+#print(prastevilo(n))
