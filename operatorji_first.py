@@ -57,76 +57,76 @@
 #    print(e)
 #end of day. "for" loop is doing me problems when reading through the material. I am at page 32 to 34 right now.
 
-s = [(1), (2), (3), (4), (5), (6), (7), (8), (9)]
+#s = [(1), (2), (3), (4), (5), (6), (7), (8), (9)]
 #naj_i = naj_e = -1
 #for i, e in enumerate(s):  #defining "s"
 #    if i < 0 or naj_e < e:
 #        naj_i, naj_e = i, e
         #giving this a pause and running alternative first
 #alternative:
-naj = None
-for ie in enumerate(s): #using definition "s" from earlier
-    if naj is None or naj[1] < ie[1]:
-        naj = ie
-print(naj[0])
-print(naj[1])
+#naj = None
+#for ie in enumerate(s): #using definition "s" from earlier
+#    if naj is None or naj[1] < ie[1]:
+#        naj = ie
+#print(naj[0])
+#print(naj[1])
 ## this finally prints resulting in: 1 and (7, 8, 9) so noa i am reconfiguring the definintion of "s" again
 ### i dont know why but i had to put ever y number in that list into ()
-a = ("Miran") #i only copy-pasted the code from above:
-naj = None
-for ie in enumerate(a):
-    if naj is None or naj[1] < ie[1]:
-        naj = ie
-print(ie)  #this doesnt work at first  a->ie  --> this throws out result: (4, 'n') I guess it works, now trying to enumerate in console
+#a = ("Miran") #i only copy-pasted the code from above:
+#naj = None
+#for ie in enumerate(a):
+#    if naj is None or naj[1] < ie[1]:
+#        naj = ie
+#print(ie)  #this doesnt work at first  a->ie  --> this throws out result: (4, 'n') I guess it works, now trying to enumerate in console
 #no, something does not work in console, which differs from what the suggestion does in the book
 
-s = ["Miran", "Miha", "Mitja"]
-for e in "Miran":  #interesting, i dont know why this works
-    print(e, ord(e)) #"ord" returns Unicode code point for one character string
+#s = ["Miran", "Miha", "Mitja"]
+#for e in "Miran":  #interesting, i dont know why this works
+#    print(e, ord(e)) #"ord" returns Unicode code point for one character string
 
-pass
-for i in range(10):
-    print(i)
-for i in range(6, 11):
-    print(i)
+#pass
+#for i in range(10):
+#    print(i)
+#for i in range(6, 11):
+#    print(i)
 
-for e in s: #here I would need an explanation what is 'e'
-    print(e)
+#for e in s: #here I would need an explanation what is 'e'
+#    print(e)
 
 #for a while   #just messing around sorry
 #    else pass
 
-a = b = 1  #is any of the first 100 fibonacci numbers dividable by 1131
-for i in range(100):
-    if a % 1131 == 0:
-        print(a, "is possible")
-        break
-    a, b = b, a+b  #why is this fibonacci rule after the print(a) and break line ???
-else:   #also question: why is this in line with 'for' and not 'if'?
-    print("no pass")
+#a = b = 1  #is any of the first 100 fibonacci numbers dividable by 1131
+#for i in range(100):
+#    if a % 1131 == 0:
+#        print(a, "is possible")
+#        break
+#    a, b = b, a+b  #why is this fibonacci rule after the 'print(a)' and 'break' line ???
+#else:   #also question: why is this in line aligned with 'for' and not 'if'?
+#    print("no pass")
 ## surprise
 
 #lets check out net example, claiming to call an url page
-import urllib.request
-for i in range(5):         #again a random 'i' in here, what for???
-    try:
-        r = urllib.request.urlopen(url) .read()    #what is now 'r' ???
-        break
-    except:
-        pass
-else:
-    print("nothing ever works")
+#import urllib.request
+#for i in range(5):         #again a random 'i' in here, what for???
+#    try:
+#        r = urllib.request.urlopen(url) .read()    #what is now 'r' ???
+#        break
+#    except:
+#        pass
+#else:
+#    print("nothing ever works")
 
 
 #lets try fibonacci again, this time with a twist
 #1. example code:
-def fibonacci(n):
-    a = b = 1
-    for i in range(n):
-        a, b = b, a + b
-    return a, a**2  #okay lets go
-a, a2 = fibonacci(10)    #after aligning this line with 'def', the code prints out result
-print(a, a2)  #question: why is it a2 and not a1? how does a2 work
+#def fibonacci(n):
+#    a = b = 1
+#    for i in range(n):
+#        a, b = b, a + b
+#    return a, a**2  #okay lets go
+#a, a2 = fibonacci(10)    #after aligning this line with 'def', the code prints out result
+#print(a, a2)  #question: why is it a2 and not a1? how does a2 work
 #how does 'return' work ?
 
 #EXERCISES
@@ -139,7 +139,7 @@ print(a, a2)  #question: why is it a2 and not a1? how does a2 work
 #    if
 #hi im back, got distracted a bit
 a = c = 120
-b = d = 113
+b = d = 96
 results_a = []
 results_b = []
 results = []
@@ -155,7 +155,7 @@ while d != 0:
         d -= 1
     else:
         d -= 1
-for results_a in results_b:
+for i in (results_a and results_b):  #how to add logic into this line ##maybe 'and' will work
     results.append(i)
 print(results)
 #something works, but unsure why  #it doesnt work, always throws out "4"  ##still doesnt work, but it throws out something
