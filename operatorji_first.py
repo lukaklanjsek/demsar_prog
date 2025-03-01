@@ -158,3 +158,5 @@ while d != 0:
 for results_a in results_b:
     results.append(i)
 print(i)
+#something works, but unsure why
+#it doesnt work, always throws out "4"
