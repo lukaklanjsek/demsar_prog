@@ -161,3 +161,16 @@ for i in results_a:
             results.append(i)
 print(results[0])  #finally got working showing only the first input into the results list
 #something works, but unsure why  #it doesnt work, always throws out "4"  ##still doesnt work, but it throws out something
+
+# perfect numbers
+
+#import math
+
+#n = 91
+#math.sqrt(n) == a   #to ni vredu
+#def prastevilo(n):
+#    for a in range(n):
+#        if n % a != 0:    #here the logic needs rewording
+#            a -= 1
+#
+#print(prastevilo(n))
