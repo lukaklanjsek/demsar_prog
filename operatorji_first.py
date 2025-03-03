@@ -174,3 +174,45 @@ print(results[0])  #finally got working showing only the first input into the re
 #            a -= 1
 #
 #print(prastevilo(n))
+
+#lists
+s = ["Ana", "Berta", "Cilka",
+     "Dani", "Ema",
+     "Fani", ]
+airports = [
+    "Ljubljana - Joze Pucnik",
+    "London - Gatwick",
+    "Pariz - Charles de Gaulle",
+]
+#print(s[0:2])
+#print(s[2:5])
+#print(s[-2:])
+#print(s[ : ])
+#print(s[::-1])  #woo hoo
+s.append("Ingrid")
+s.insert(3, "Ester")
+s.insert(3, "Erika")
+s.extend(["Jasna", "Karla"])
+s += ["Cireja", "Creda"]
+s[3:3] = ["Ines", "Ahmed"]
+#print(s)
+s[4:4] = ["Dragica", "Evgenija"]
+s += ["Francka"]
+s.sort(reverse=True)
+print(s)
+s = []
+#for i in range(5):
+#    s.append([])
+#s = [[]for i in range(6)]
+
+#examples
+s = [1, 2, 3, 4, 5, 6,]
+t = [1, 3, 5, 7]
+def primerjaj(s, t):
+    if s < t:
+        return(-1)
+    elif s == t:
+        return(0)
+    elif not s < t:
+        return(1)
+print(primerjaj(s, t))
