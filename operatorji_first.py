@@ -216,3 +216,16 @@ def primerjaj(s, t):
     elif not s < t:
         return(1)
 print(primerjaj(s, t))
+
+#number two
+s = [5, 3, 1, 2, 4]
+print(min(s))
+s *= 4
+#for s in range(len(s)):
+a = min(s)
+i = [index for (index, a) in enumerate(s) if a]
+#print(len(s))
+#    s.index(min(s))
+#print(i)
+#print(s.index(i, 0, ))
+print(i)  #it is not working yet
