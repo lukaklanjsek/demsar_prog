@@ -206,15 +206,15 @@ s = []
 #s = [[]for i in range(6)]
 
 #examples
-s = [1, 2, 3, 4, 5, 6,]
-t = [1, 3, 5, 7]
-def primerjaj(s, t):
-    if s < t:
-        return(-1)
-    elif s == t:
-        return(0)
-    elif not s < t:
-        return(1)
+#s = [1, 2, 3, 4, 5, 6,]
+#t = [1, 3, 5, 7]
+#def primerjaj(s, t):
+#    if s < t:
+#        return(-1)
+#    elif s == t:
+#        return(0)
+#    elif not s < t:
+#        return(1)
 #print(primerjaj(s, t))
 
 #number two
@@ -229,17 +229,35 @@ a = min(s)
 #print(i)
 #print(s.index(i, 0, ))w
 #print(i)  #it is not working yet
-t = [a]
-for i, e in enumerate(s):
+#t = [a]
+#for i, e in enumerate(s):
     #enumerate([s])
     #t = (enumerate(s), s.index(e))
     #return
     #t = (s)
-    if e == min(s): #how to improve logic on this one
-        t.append(t.index(s))
+    #if e == min(s): #how to improve logic on this one
+        #t.append(t.index(s))
         #t = ie
     #    t += [s.index(min(s)), a]
 #    enumerate(s.index(s(a)))
 #    if i == min(s):
+#print(t)
+t = []
+u = []
+for ei in enumerate(s):
+    t.append(ei)
+    if
+
+#    for ei in t:
+#        if i == min(s):
+
+#            u.append(i)
+    #if e == a:
+        #print(e, i)
+        #for a in t :
+        #print(t)
+        #for a in s:
+        #a = min(s)
 
 print(t)
+print(u)
