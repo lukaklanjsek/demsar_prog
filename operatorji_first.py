@@ -159,7 +159,7 @@ for i in results_a:
     for f in results_b:  #how to add logic into this line
         if i == f:
             results.append(i)
-print(results[0])  #finally got working showing only the first input into the results list
+#print(results[0])  #finally got working showing only the first input into the results list
 #something works, but unsure why  #it doesnt work, always throws out "4"  ##still doesnt work, but it throws out something
 
 # perfect numbers
@@ -199,7 +199,7 @@ s[3:3] = ["Ines", "Ahmed"]
 s[4:4] = ["Dragica", "Evgenija"]
 s += ["Francka"]
 s.sort(reverse=True)
-print(s)
+#print(s)
 s = []
 #for i in range(5):
 #    s.append([])
@@ -215,7 +215,7 @@ def primerjaj(s, t):
         return(0)
     elif not s < t:
         return(1)
-print(primerjaj(s, t))
+#print(primerjaj(s, t))
 
 #number two
 s = [5, 3, 1, 2, 4]
@@ -223,9 +223,22 @@ print(min(s))
 s *= 4
 #for s in range(len(s)):
 a = min(s)
-i = [index for (index, a) in enumerate(s) if a]
+#i = [index for (index, a) in enumerate(s) if min(s)]
 #print(len(s))
 #    s.index(min(s))
 #print(i)
-#print(s.index(i, 0, ))
-print(i)  #it is not working yet
+#print(s.index(i, 0, ))w
+#print(i)  #it is not working yet
+t = None
+for ie in enumerate(s):
+    #enumerate([s])
+    #t = (enumerate(s), s.index(e))
+    #return
+    #t = (s)
+    if t is None or t[1] == ie[1]:  #how to improve logic on this one
+        t = ie
+    #    t += [s.index(min(s)), a]
+#    enumerate(s.index(s(a)))
+#    if i == min(s):
+
+print(t)
