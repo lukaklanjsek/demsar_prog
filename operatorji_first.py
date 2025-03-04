@@ -229,14 +229,15 @@ a = min(s)
 #print(i)
 #print(s.index(i, 0, ))w
 #print(i)  #it is not working yet
-t = None
-for ie in enumerate(s):
+t = [a]
+for i, e in enumerate(s):
     #enumerate([s])
     #t = (enumerate(s), s.index(e))
     #return
     #t = (s)
-    if t is None or t[1] == ie[1]:  #how to improve logic on this one
-        t = ie
+    if e == min(s): #how to improve logic on this one
+        t.append(t.index(s))
+        #t = ie
     #    t += [s.index(min(s)), a]
 #    enumerate(s.index(s(a)))
 #    if i == min(s):
