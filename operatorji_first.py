@@ -138,27 +138,27 @@
 #def euclid(a, b):  #for the start, this function will have to await
 #    if
 #hi im back, got distracted a bit
-a = c = 144
-b = d = 60
-results_a = []
-results_b = []
-results = []
-while c != 0:
-    if a % c == 0:
-        results_a.append(c)
-        c -= 1
-    else:
-        c -= 1
-while d != 0:
-    if b % d == 0:
-        results_b.append(d)
-        d -= 1
-    else:
-        d -= 1
-for i in results_a:
-    for f in results_b:  #how to add logic into this line
-        if i == f:
-            results.append(i)
+#a = c = 144
+#b = d = 60
+#results_a = []
+#results_b = []
+#results = []
+#while c != 0:
+#    if a % c == 0:
+#        results_a.append(c)
+#        c -= 1
+#    else:
+#        c -= 1
+#while d != 0:
+#    if b % d == 0:
+#        results_b.append(d)
+#        d -= 1
+#    else:
+#        d -= 1
+#for i in results_a:
+#    for f in results_b:  #how to add logic into this line
+#        if i == f:
+#            results.append(i)
 #print(results[0])  #finally got working showing only the first input into the results list
 #something works, but unsure why  #it doesnt work, always throws out "4"  ##still doesnt work, but it throws out something
 
@@ -176,31 +176,31 @@ for i in results_a:
 #print(prastevilo(n))
 
 #lists
-s = ["Ana", "Berta", "Cilka",
-     "Dani", "Ema",
-     "Fani", ]
-airports = [
-    "Ljubljana - Joze Pucnik",
-    "London - Gatwick",
-    "Pariz - Charles de Gaulle",
-]
+#s = ["Ana", "Berta", "Cilka",
+#     "Dani", "Ema",
+#     "Fani", ]
+#airports = [
+#    "Ljubljana - Joze Pucnik",
+#    "London - Gatwick",
+#    "Pariz - Charles de Gaulle",
+#]
 #print(s[0:2])
 #print(s[2:5])
 #print(s[-2:])
 #print(s[ : ])
 #print(s[::-1])  #woo hoo
-s.append("Ingrid")
-s.insert(3, "Ester")
-s.insert(3, "Erika")
-s.extend(["Jasna", "Karla"])
-s += ["Cireja", "Creda"]
-s[3:3] = ["Ines", "Ahmed"]
+#s.append("Ingrid")
+#s.insert(3, "Ester")
+#s.insert(3, "Erika")
+#s.extend(["Jasna", "Karla"])
+#s += ["Cireja", "Creda"]
+#s[3:3] = ["Ines", "Ahmed"]
 #print(s)
-s[4:4] = ["Dragica", "Evgenija"]
-s += ["Francka"]
-s.sort(reverse=True)
+#s[4:4] = ["Dragica", "Evgenija"]
+#s += ["Francka"]
+#s.sort(reverse=True)
 #print(s)
-s = []
+#s = []
 #for i in range(5):
 #    s.append([])
 #s = [[]for i in range(6)]
@@ -219,10 +219,11 @@ s = []
 
 #number two
 s = [5, 3, 1, 2, 4]
-print(min(s))
-s *= 4
+#print(min(s))
+s += [4, 3, 6, 4, 6, 4, 3, 4, 1, 3, 2, 2, 4, 5, 6, 7, 7, 2, 1, 5, 4, 3, 1, 3, 7]
 #for s in range(len(s)):
-a = min(s)
+#a = min(s)
+#a = str(a)
 #i = [index for (index, a) in enumerate(s) if min(s)]
 #print(len(s))
 #    s.index(min(s))
@@ -244,13 +245,56 @@ a = min(s)
 #print(t)
 t = []
 u = []
-for ei in enumerate(s):
-    t.append(ei)
-    if
+# I need a different approach
 
+a = min(s)
+print(a)   #test value
+
+
+
+
+#def smallest(s):
+for ie in enumerate(s):
+    t.append(ie)
+#    else:
+#        pass
+    print(ie)  #test
+print(range(n))   #trying out something, if switching the list around and zip it might be a mathematical function
+
+#    if e == a:
+#        t.append(e)
+
+print("")    #entering a break before test and end_test prints
+s.index(a)
+print(s.index(a))    #first answer we seek
+#    for e in enumerate(s):
+#        if not e == a:
+
+#        elif e == a:
+#            print(e)
+
+
+#        else:
+#            t.append(s)
+#            s.del(s[e])
+#for e in s:
+#    if e == a:   #okay this is if statement
+#        t.append(e)
+#    if not e == a:
+#        s.pop(e)
+#for e in enumerate(s):
+#    t.append(e)
+#    if e == a:
+#        u.append(e)
+#for ei in enumerate(s):
+#    t.append(ei)
+#    for (e, i) in t:
+#        if i > a:
+#            t.remove(i)
+#        elif i == a:
+#            u.append(ei)
 #    for ei in t:
 #        if i == min(s):
-
 #            u.append(i)
     #if e == a:
         #print(e, i)
@@ -258,6 +302,9 @@ for ei in enumerate(s):
         #print(t)
         #for a in s:
         #a = min(s)
-
-print(t)
-print(u)
+print("Exercise two:")    #this is our answer to the exercise
+print(s)   #our list we working with
+#str(a)
+print(("smallest elelment= ") + str(a))    #first task
+print(t)    #test
+print(u)    #test
