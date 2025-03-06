@@ -221,6 +221,22 @@
 s = [5, 3, 1, 2, 4]
 #print(min(s))
 s += [4, 3, 6, 4, 6, 4, 3, 4, 1, 3, 2, 2, 4, 5, 6, 7, 7, 2, 1, 5, 4, 3, 1, 3, 7]
+index = 0
+a = s[0]
+t = []
+while index < len(s):
+    if (s[index]) == a:
+        t.append(index)
+    elif (s[index]) < a:
+        t = [index]
+#        t = []    #my instructor told me to comment this code out
+#        t.append(index)
+        a = s[index]
+#    else:
+#        None
+    index += 1
+print(a)
+print(t)
 #for s in range(len(s)):
 #a = min(s)
 #a = str(a)
@@ -243,30 +259,26 @@ s += [4, 3, 6, 4, 6, 4, 3, 4, 1, 3, 2, 2, 4, 5, 6, 7, 7, 2, 1, 5, 4, 3, 1, 3, 7]
 #    enumerate(s.index(s(a)))
 #    if i == min(s):
 #print(t)
-t = []
-u = []
+#t = []
+#u = []
 # I need a different approach
-
-a = min(s)
-print(a)   #test value
-
-
-
-
+#a = min(s)
+#print(a)   #test value
 #def smallest(s):
-for ie in enumerate(s):
-    t.append(ie)
+#for ie in enumerate(s):
+#    t.append(ie)
 #    else:
 #        pass
-    print(ie)  #test
-print(range(n))   #trying out something, if switching the list around and zip it might be a mathematical function
-
+#    print(ie)  #test
+print("test exercises")
+#n = range(s)   #trying out something, if switching the list around and zip it might be a mathematical function
+#print(n)
 #    if e == a:
 #        t.append(e)
 
-print("")    #entering a break before test and end_test prints
-s.index(a)
-print(s.index(a))    #first answer we seek
+#print("")    #entering a break before test and end_test prints
+#s.index(a)
+#print(s.index(a))    #first answer we seek
 #    for e in enumerate(s):
 #        if not e == a:
 
@@ -304,7 +316,7 @@ print(s.index(a))    #first answer we seek
         #a = min(s)
 print("Exercise two:")    #this is our answer to the exercise
 print(s)   #our list we working with
-#str(a)
+str(a)
 print(("smallest elelment= ") + str(a))    #first task
-print(t)    #test
-print(u)    #test
+print(t)    #test #it goes hard
+#print(u)    #test
