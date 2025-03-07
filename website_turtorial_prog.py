@@ -72,4 +72,43 @@ print(type(amount2))
 sdfiuuh = {"name": "John", "address" : "eleven"}    #dictionary
 sdfiuuh2 = {"one", "two", "three"}       #set
 print(type(sdfiuuh), type(sdfiuuh2))
-#
+# type conversion
+x = 1
+a = float(x)
+print(a, type(a))
+b = str(a)
+print(b, type(b))
+# strings
+a = """One two three
+everybody wants things from me
+I am crawled in a baby bed
+things look very bad."""
+print(a)
+print(a[12], len(a))
+print(a[17:25], a.upper())
+age = {336}
+txt = f"My mother is John, how did you {age}"
+print(txt)
+cost = 11
+txt = f"the price is {cost:.2f}"
+print(txt)
+txt = f"the price keeps increasing {cost + 2}"
+print(txt)
+# escape character \ + others
+txt = "there is an \"escape character\" that allows the double quotations to enter into the print"  # you need to put it in front of every character
+print(txt)
+txt = "single quote", " \\backslash", "Hello \nChat \n new line", " \r carriage return", " \n \t tab",
+" backspace \b", " \f form feed" #\ooo octal value, \xhh hex value; \n lets see how this prints"     #this doesnt work yet
+print(txt)
+txt = "single quotte and \nA new line!"
+print(txt)
+"""escape_char = (("Code, Result"),
+               	Single Quote"),
+	Backslash",
+	New Line",
+
+	Carriage Return",
+	Tab,	Form Feed,
+	Octal value",
+Hex value),"""
+# string methods
