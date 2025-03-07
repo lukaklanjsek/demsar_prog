@@ -112,3 +112,14 @@ print(txt)
 	Octal value",
 Hex value),"""
 # string methods
+# operators here we go again
+x = y = z = 10
+x /= 3
+y %= 3
+z //= 3
+print(x, y, z)
+x = y = z = 15
+x &= 7
+y |= 8
+z ^= 7
+print(x, y, z)
