@@ -97,8 +97,8 @@ print(txt)
 # escape character \ + others
 txt = "there is an \"escape character\" that allows the double quotations to enter into the print"  # you need to put it in front of every character
 print(txt)
-txt = "single quote", " \\backslash", "Hello \nChat \n new line", " \r carriage return", " \n \t tab",
-" backspace \b", " \f form feed" #\ooo octal value, \xhh hex value; \n lets see how this prints"     #this doesnt work yet
+# txt = "single quote", " \\backslash", "Hello \nChat \n new line", " \r carriage return", " \n \t tab",
+# " backspace \b", " \f form feed" #\ooo octal value, \xhh hex value; \n lets see how this prints"     #this doesnt work yet
 print(txt)
 txt = "single quotte and \nA new line!"
 print(txt)
@@ -123,3 +123,66 @@ x &= 7
 y |= 8
 z ^= 7
 print(x, y, z)
+# new day new me :)))
+"""lets try the tripple quote comment:
+List is a collection which is ordered and changeable. Allows for duplicates. 
+example_list = ["apple", "banana", "cherry"]
+
+Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+example_tuple = ("apple", "banana", "cherry")
+
+Set is a collection which is unordered, unchangeable and unindexed. No duplicates.
+example_set = {"apple", "banana", "cherry"}
+
+Dictionary is a collection which is ordered and changeable. No duplicates.
+example_dictionary = {"brand": "Ford", "model": "Mustang", "year": 1964}"""
+#Lists
+example_list = ["apple", "banana", "super_smash_bros"]
+print(example_list[-1])
+example_list += ["lil_chery", "mon_chery", "bon_chery", "das_orange"]
+print(example_list[2:])
+print(example_list[-3:-1])
+if "bon_chery" in example_list:
+    print(" Si, si, moin cherry")
+example_list[1:3] = ["water_mellon", "seller"]
+print(len(example_list))
+example_list.insert(5, "MELLON")
+example_list.append("reseller")
+example_list.insert(2, "Woila")
+example_list2 = ["The pope", "the majesty", "the king"]
+example_list.extend(example_list2)
+example_list3 = ("The boing", "the boeing", "airbus", "supremacy")
+example_list.extend(example_list3)
+print(example_list)
+#non negotiables one two three everybody is after me
+example_list += ["airbus", "supremacy"]
+example_list.remove("airbus")
+print(example_list)
+example_list.pop()
+del example_list3
+example_list2.clear()
+i = 0
+while i < len(example_list):
+    print(example_list[i])
+    i += 1
+thislist = ["apple", "banana", "cherry"]
+[print(x) for x in thislist]    #why is [] needed for printing
+newest_list = [x for x in example_list if "c" in x]
+print(newest_list)
+#new_list = [expression for item in iterable if condition == True]  ...makes a new list leaving the old list unchanged
+example_list4 = [x for x in example_list]
+example_list5 = [x.upper() for x in example_list]
+#print(example_list4)
+#print(example_list5)
+example_list4.sort(reverse = True)
+example_list5.sort()
+print(example_list4)
+print(example_list5)
+#def example_fuction(n):
+
+example_list.sort(key = str.lower)
+print(example_list)
+# tuples:
+example_tuple = ("NUMBAONE",)    #the "," comma makes it a tuple
+example_tuple2 = ("NUMBAONE")    #this turns out to become a string
+print(type(example_tuple), type(example_tuple2))
