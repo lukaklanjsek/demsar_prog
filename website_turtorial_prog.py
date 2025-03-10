@@ -216,6 +216,26 @@ print(example_set)
 example_set.remove(True)     #i was receiving an error because I forgot and typed " " while attempting to remove the boolean
 example_set.discard(1)     #from .remove we will use .discard as supposingly this doesnt throw and error if item already gone
 pop_set = {"one", "Two", "three", "everybody", "follow", "me", True}
-x = pop_set.pop()
+x = pop_set.pop()    #this truly is random
 print(x)
 print(pop_set)
+set_various = example_set.union(pop_set)
+set_various1 = pop_set | example_set
+set_ultimate = set_various | set_various1 | pop_set | example_set | example_set1
+set_various2 = pop_set.union(example_tuple3)
+set_various1.update(set_various2)
+print(set_various1)
+print(set_ultimate)
+set_mega = set_various1.difference(set_ultimate)
+set_mega1 = set_various.difference_update(set_various2)
+set_oppen = set_various1.symmetric_difference(set_ultimate)
+print(set_oppen)
+set_ultimate.symmetric_difference_update(set_various1)
+print(set_ultimate)
+# dictionaries
+example_dictionary = {"coffe" : "yes", "type" : "latte", "amount" : "two cups", "Music" : True}
+print(example_dictionary)
+example_dictionary1 = {"example_key" : "example_value", "Music" : False}
+print(len(example_dictionary))
+example_dictionary2 = {"brand": "coffe", "value": ["name", "all", "values", "of", "ours"], "colour": True}
+print(example_dictionary2)
