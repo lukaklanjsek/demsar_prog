@@ -123,7 +123,7 @@ x &= 7
 y |= 8
 z ^= 7
 print(x, y, z)
-# new day new me :)))
+# new day new me :)
 """lets try the tripple quote comment:
 List is a collection which is ordered and changeable. Allows for duplicates. 
 example_list = ["apple", "banana", "cherry"]
@@ -186,3 +186,36 @@ print(example_list)
 example_tuple = ("NUMBAONE",)    #the "," comma makes it a tuple
 example_tuple2 = ("NUMBAONE")    #this turns out to become a string
 print(type(example_tuple), type(example_tuple2))
+example_tuple3 = ("apple", 42, True, "bandana", "cherish", "orange_man")
+print(example_tuple3[-3:-1])
+test_tuple = ("orange",)
+example_tuple3 += test_tuple
+(yellow, red, example_red, *test_yellow) = example_tuple3
+print(test_yellow, type(test_yellow))
+(yellow, *red, green) = example_tuple3
+print(yellow, red, green)    #interesting that the tuple still exists, its values were simply extracted or borrowed, not sure yet
+for i in range(len(example_tuple3)):
+    if i > 2:
+        print(example_tuple3[i])    #this worked yay much happy
+i = 0
+while i < len(example_tuple3):
+    print(example_tuple3[i])
+    i += 2
+example_tuple4 = example_tuple3 * 2
+print(example_tuple4)
+# python sets, lets {set} an example
+# indeed I am very funny
+example_set = {"apple", "Banana", "One republic", "one commissairiate", "an example"}
+print(example_set)
+print(example_set)  #this is still same order of items in a set
+example_set1 = {"Apple", "apple", "bannan", True, 1, 2, 3, "apple"}    #set differences the letter capitalisation, so here are as well "Apple" as "apple"
+print(example_set1)   #finally a different order of things in a print
+print(len(example_set1), len(example_set1), type(example_red), type(example_set1))
+example_set.update(example_set1)
+print(example_set)
+example_set.remove(True)     #i was receiving an error because I forgot and typed " " while attempting to remove the boolean
+example_set.discard(1)     #from .remove we will use .discard as supposingly this doesnt throw and error if item already gone
+pop_set = {"one", "Two", "three", "everybody", "follow", "me", True}
+x = pop_set.pop()
+print(x)
+print(pop_set)
