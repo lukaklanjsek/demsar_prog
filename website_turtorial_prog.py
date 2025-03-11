@@ -261,16 +261,16 @@ for x in example_dictionary:
 for x, y in example_dictionary2.items():
     print(x, y)
 example_family = {
-    "father" : {"name" : "Jack",
-                "year" : "1974"}
-    "Mother" : {"name" : "Jackie"}
-"child1" : {
-    "name" : "Josephine",
-    "year" : "2003"}
-"child2" : {
-    "name" : "Jon",
-    "year" : "2001"}
-"child3" : {
-    "name" : "Joseph"}
-}
+                  "father" : {"name" : "Jack",
+                              "year" : "1974"},
+                  "Mother" : {"name" : "Jackie"},
+                  "child1" : {
+                              "name" : "Josephine",
+                              "year" : "2003"},
+                  "child2" : {
+                              "name" : "Jon",
+                              "year" : "2001"},
+                  "child3" : {
+                              "name" : "Joseph"},
+                  }
 print(example_family)
