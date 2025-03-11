@@ -239,3 +239,38 @@ example_dictionary1 = {"example_key" : "example_value", "Music" : False}
 print(len(example_dictionary))
 example_dictionary2 = {"brand": "coffe", "value": ["name", "all", "values", "of", "ours"], "colour": True}
 print(example_dictionary2)
+# New day new opportunity to get the work done
+example_dictionary3 = dict(name = "Jacob", age = "proper", country = "Norgay")
+print(type(example_dictionary3), example_dictionary3)
+x = example_dictionary1.keys()
+print(x)
+x = example_dictionary.keys()
+print(x)  #before change
+example_dictionary["coffee"] = "maybe"    # It needed to be a new item and not changing the old key value
+print(x)
+x = example_dictionary.items()
+print(x)
+example_dictionary["number"] = "three"
+print(example_dictionary)
+del example_dictionary["amount"]
+print(example_dictionary)
+for x in example_dictionary:
+    print(x)         #prints keys
+for x in example_dictionary:
+    print(example_dictionary[x])    #prints values
+for x, y in example_dictionary2.items():
+    print(x, y)
+example_family = {
+    "father" : {"name" : "Jack",
+                "year" : "1974"}
+    "Mother" : {"name" : "Jackie"}
+"child1" : {
+    "name" : "Josephine",
+    "year" : "2003"}
+"child2" : {
+    "name" : "Jon",
+    "year" : "2001"}
+"child3" : {
+    "name" : "Joseph"}
+}
+print(example_family)
