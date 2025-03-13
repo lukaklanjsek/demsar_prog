@@ -274,3 +274,53 @@ example_family = {
                               "name" : "Joseph"},
                   }
 print(example_family)
+#attempting to rush through the exercises on web
+#    python loops and logic: IF, ELSE
+#print(a, b)  #hiding this one
+a = 333
+b = 222
+if a < b:
+    print("a smol haha")
+elif a == b:
+    print("haha they same dumb")
+else:
+    print("damn bro u for real")
+print("A") if a > b else print("=") if a == b else print("B")    #long line af
+a = 200
+b = 22
+c = 499
+if a > b and c > a:
+    print("All the conditions are met")
+if a >b or a > c:
+    print("at least one of the conditions is True")
+if not a > b:
+    print("false error")
+if a > 10:         #lets change x into an a
+    print("above ten")
+    if a > 20:
+        print("and also above 20")
+    else:
+        print("but not above 20.")
+if b > a:
+    pass
+# the WHILE loops
+i = 1
+while i < 6:
+    print(i)
+    if i == 3:
+        break
+    i += 1
+while i < 5:
+    i += 1
+    if i == 5:
+        continue
+    print(i)
+i = 2
+while i < 6:
+    print(i)
+    i += 1
+else:
+    print("i ends here")
+# PYTHON 4 LOOPS oops oops oops
+for x in "divorce":
+    print("4 fake money") #she took it all
