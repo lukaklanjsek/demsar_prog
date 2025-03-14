@@ -6,7 +6,7 @@ x = 'awesome'
 def myfunc():
   x = 'fantastic'
 myfunc()
-print('Python is ' + x) #why does it print 'awesome' instead of 'fantastic'  #haha figured out its because of local and regional values
+print('Python is ' + x) # why does it print 'awesome' instead of 'fantastic'  #haha figured out its because of local and regional values
 #
 x = 'awesome'
 def myfunc():
@@ -29,7 +29,7 @@ txt = txt.replace("H", "J")    # the .replace even suggests you old and new
 print(txt)
 # correct syntax to add a placeholder for parameter
 age = 36
-txt = f"My name is John, and I am {age}"  #the trick is to use curly brackets {}
+txt = f"My name is John, and I am {age}"  # the trick is to use curly brackets {}
 print(txt)
 # many values to multiple variables
 x, y, z =  "Orange", "Banana", "Cherry"
@@ -51,7 +51,7 @@ x = "amazing"
 def myfunc():
     x = "specific"
     print("python is " + x)
-myfunc()             #why is this myfunc here
+myfunc()             # why is this myfunc here
 print("PYthon is " + x)
 #
 x = "amazing"
@@ -62,15 +62,15 @@ def myfunct():
 #    global x
     x = "specific"
     print(x)
-#myfunct()
+# myfunct()
 print("Python is " + x)
 # data types
-amount = ["abple", "list", 25]  #list
-amount2 = ("apple", "banana", 25)     #tuple
+amount = ["abple", "list", 25]  # list
+amount2 = ("apple", "banana", 25)     # tuple
 print(type(amount))
 print(type(amount2))
-sdfiuuh = {"name": "John", "address" : "eleven"}    #dictionary
-sdfiuuh2 = {"one", "two", "three"}       #set
+sdfiuuh = {"name": "John", "address" : "eleven"}    # dictionary
+sdfiuuh2 = {"one", "two", "three"}       # set
 print(type(sdfiuuh), type(sdfiuuh2))
 # type conversion
 x = 1
@@ -136,7 +136,7 @@ example_set = {"apple", "banana", "cherry"}
 
 Dictionary is a collection which is ordered and changeable. No duplicates.
 example_dictionary = {"brand": "Ford", "model": "Mustang", "year": 1964}"""
-#Lists
+# Lists
 example_list = ["apple", "banana", "super_smash_bros"]
 print(example_list[-1])
 example_list += ["lil_chery", "mon_chery", "bon_chery", "das_orange"]
@@ -154,7 +154,7 @@ example_list.extend(example_list2)
 example_list3 = ("The boing", "the boeing", "airbus", "supremacy")
 example_list.extend(example_list3)
 print(example_list)
-#non negotiables one two three everybody is after me
+# non negotiables one two three everybody is after me
 example_list += ["airbus", "supremacy"]
 example_list.remove("airbus")
 print(example_list)
@@ -166,25 +166,25 @@ while i < len(example_list):
     print(example_list[i])
     i += 1
 thislist = ["apple", "banana", "cherry"]
-[print(x) for x in thislist]    #why is [] needed for printing
+[print(x) for x in thislist]    # why is [] needed for printing
 newest_list = [x for x in example_list if "c" in x]
 print(newest_list)
-#new_list = [expression for item in iterable if condition == True]  ...makes a new list leaving the old list unchanged
+# new_list = [expression for item in iterable if condition == True]  ...makes a new list leaving the old list unchanged
 example_list4 = [x for x in example_list]
 example_list5 = [x.upper() for x in example_list]
-#print(example_list4)
-#print(example_list5)
+# print(example_list4)
+# print(example_list5)
 example_list4.sort(reverse = True)
 example_list5.sort()
 print(example_list4)
 print(example_list5)
-#def example_fuction(n):
+# def example_fuction(n):
 
 example_list.sort(key = str.lower)
 print(example_list)
 # tuples:
-example_tuple = ("NUMBAONE",)    #the "," comma makes it a tuple
-example_tuple2 = ("NUMBAONE")    #this turns out to become a string
+example_tuple = ("NUMBAONE",)    # the "," comma makes it a tuple
+example_tuple2 = ("NUMBAONE")    # this turns out to become a string
 print(type(example_tuple), type(example_tuple2))
 example_tuple3 = ("apple", 42, True, "bandana", "cherish", "orange_man")
 print(example_tuple3[-3:-1])
@@ -193,10 +193,10 @@ example_tuple3 += test_tuple
 (yellow, red, example_red, *test_yellow) = example_tuple3
 print(test_yellow, type(test_yellow))
 (yellow, *red, green) = example_tuple3
-print(yellow, red, green)    #interesting that the tuple still exists, its values were simply extracted or borrowed, not sure yet
+print(yellow, red, green)    # interesting that the tuple still exists, its values were simply extracted or borrowed, not sure yet
 for i in range(len(example_tuple3)):
     if i > 2:
-        print(example_tuple3[i])    #this worked yay much happy
+        print(example_tuple3[i])    # this worked yay much happy
 i = 0
 while i < len(example_tuple3):
     print(example_tuple3[i])
@@ -213,10 +213,10 @@ print(example_set1)   #finally a different order of things in a print
 print(len(example_set1), len(example_set1), type(example_red), type(example_set1))
 example_set.update(example_set1)
 print(example_set)
-example_set.remove(True)     #i was receiving an error because I forgot and typed " " while attempting to remove the boolean
-example_set.discard(1)     #from .remove we will use .discard as supposingly this doesnt throw and error if item already gone
+example_set.remove(True)     # i was receiving an error because I forgot and typed " " while attempting to remove the boolean
+example_set.discard(1)     # from .remove we will use .discard as supposingly this doesnt throw and error if item already gone
 pop_set = {"one", "Two", "three", "everybody", "follow", "me", True}
-x = pop_set.pop()    #this truly is random
+x = pop_set.pop()    # this truly is random
 print(x)
 print(pop_set)
 set_various = example_set.union(pop_set)
@@ -239,13 +239,14 @@ example_dictionary1 = {"example_key" : "example_value", "Music" : False}
 print(len(example_dictionary))
 example_dictionary2 = {"brand": "coffe", "value": ["name", "all", "values", "of", "ours"], "colour": True}
 print(example_dictionary2)
+
 # New day new opportunity to get the work done
 example_dictionary3 = dict(name = "Jacob", age = "proper", country = "Norgay")
 print(type(example_dictionary3), example_dictionary3)
 x = example_dictionary1.keys()
 print(x)
 x = example_dictionary.keys()
-print(x)  #before change
+print(x)  # before change
 example_dictionary["coffee"] = "maybe"    # It needed to be a new item and not changing the old key value
 print(x)
 x = example_dictionary.items()
@@ -255,9 +256,9 @@ print(example_dictionary)
 del example_dictionary["amount"]
 print(example_dictionary)
 for x in example_dictionary:
-    print(x)         #prints keys
+    print(x)         # prints keys
 for x in example_dictionary:
-    print(example_dictionary[x])    #prints values
+    print(example_dictionary[x])    # prints values
 for x, y in example_dictionary2.items():
     print(x, y)
 example_family = {
@@ -274,9 +275,9 @@ example_family = {
                               "name" : "Joseph"},
                   }
 print(example_family)
-#attempting to rush through the exercises on web
+# attempting to rush through the exercises on web
 #    python loops and logic: IF, ELSE
-#print(a, b)  #hiding this one
+# print(a, b)  # hiding this one
 a = 333
 b = 222
 if a < b:
@@ -295,7 +296,7 @@ if a >b or a > c:
     print("at least one of the conditions is True")
 if not a > b:
     print("false error")
-if a > 10:         #lets change x into an a
+if a > 10:         # lets change x into an a
     print("above ten")
     if a > 20:
         print("and also above 20")
@@ -324,3 +325,72 @@ else:
 # PYTHON 4 LOOPS oops oops oops
 for x in "divorce":
     print("4 fake money") #she took it all
+# new day new me
+for x in range(2, 30, 3):
+    print(x)
+for x in range(6):
+    print(x)
+else:
+    print("We are finally completed")
+for x in range(6):
+    if x == 3: break
+    print(x)
+else:
+    print("We are done here")
+adjectives = ["big", "red", "greatest on the planet"]
+fruits = ["apple", "cherry", "raspberry"]
+
+for x in adjectives:
+    for y in fruits:
+        print(x, y)    # this is a lot of interesting
+# Functions
+def my_function():
+    print("hello from my function")
+
+my_function()
+def name_function(fname):
+    print(fname + " Refnes")
+
+name_function("Emil")
+name_function("Tobias")
+name_function("Me, me, ME")
+
+def my_function(fname, lname):
+    print(fname + " " + lname)
+
+my_function("emil", "riot")
+# my_function("emile")    # without exact amount of arguments given to a function, there will be error and things will get worse
+def my_function(*kids):      # number of arguments is unknown
+    print("The youngest child is " + kids[-1])    #this works with kids[2] but does it work with kids[-1] so i get the last argument regardless
+
+my_function("emil", "Tobias", "general effort", "cause and betrayal")    #turns out it does work like that
+# def greet(name, greeting):
+#    print(
+
+def my_function(country = "Norway"):
+    print("I am from " + country)
+my_function("sweden")
+my_function("INDIA")
+my_function()
+my_function("Brazil")
+
+def my_function(food):
+    for x in food:
+        print(x)
+
+fruits = ["Apple", "banana", "cherry"]
+
+my_function(fruits)
+
+def my_function(x):
+    return 5 * x
+
+print(my_function(1))
+print(my_function(9))
+print(my_function(73))
+
+def my_function(a, b, /, *, c, d):
+    print(a + b + c + d)
+
+my_function(4, 3, c = 5, d = 7)
+# learning with AI on a browser interface but about to return
