@@ -394,3 +394,7 @@ def my_function(a, b, /, *, c, d):
 
 my_function(4, 3, c = 5, d = 7)
 # learning with AI on a browser interface but about to return
+
+# okay lets go it is monday again!
+# define function that accepts a list of numbers and returns a lists of consequtive numbers that are larger or equal than the one before
+def return_list():

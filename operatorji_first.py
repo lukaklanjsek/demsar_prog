@@ -320,3 +320,7 @@ str(a)
 print(("smallest elelment= ") + str(a))    #first task
 print(t)    #test #it goes hard
 #print(u)    #test
+
+# okay lets go it is monday again!
+# define function that accepts a list of numbers and returns a lists of consequtive numbers that are larger or equal than the one before
+#def return_list():
