@@ -18,16 +18,16 @@ print(sys.version)
 # sys.argv = []
 print(sys.argv)
 
-the_message = list(sys.stdin)
+the_message = (sys.stdin)
 
 print(the_message, type(the_message))
 
 
 
-for line in sys.stdin:
-    if 'q' == line.rstrip():
-        break
-    print(f'Input : {line}')
+#for line in sys.stdin:
+#    if 'q' == line.rstrip():
+#        break
+#    print(f'Input : {line}')
 
 print("Exit")
 print(sys.argv)
