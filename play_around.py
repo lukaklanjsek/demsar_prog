@@ -13,6 +13,7 @@ print(z)
 for e in z:  #why 'e' works???
     print(e)
 '''
+"""
 import sys
 print(sys.version)
 # sys.argv = []
@@ -34,3 +35,24 @@ print(sys.argv)
 
 txt = "The best things in life are free!"
 print("free" in txt)
+"""
+user_input = ["bacil", "cilba", "bilca"]
+
+list_a = ["a", "b", "c"]
+list_b = ["i", "l"]
+
+wait_time = 0    # result
+
+count_1 = 0
+count_2 = 0
+
+def funkcija():
+
+    for i in user_input:
+        if i in list_a:
+            count_1 += 1
+        elif i in list_b:
+            count_2 += 1
+        i += 1
+print(count_1, count_2)
+

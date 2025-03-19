@@ -2,6 +2,7 @@ import sys
 # speech = sys.argv[1]    # this doesnt work as intended
 # print(sys.argv)
 speech = sys.argv[1:]
+#speech = "bacil"    # test
 """
 keys = {" " : 1,
         "a" : 2, "b" : 2, "c" : 2,
@@ -27,57 +28,57 @@ key_9 = ["w", "x", "y", "z"]
 wait_time = 0
 
 def pause_time(speech):
-    current_key = ""
+    current_key = 0
     for i in speech:
         if i not in key_1:
             pass
         else:
             current_key = "key_1"
-            break
+#            break
         if i not in key_2:
             pass
         else:
             current_key = "key_2"
-            break
+#            break
         if i not in key_3:
             pass
         else:
             current_key = "key_3"
-            break
+#            break
         if i not in key_4:
             pass
         else:
             current_key = "key_4"
-            break
+#            break
         if i not in key_5:
             pass
         else:
             current_key = "key_5"
-            break
+#            break
         if i not in key_6:
             pass
         else:
             current_key = "key_6"
-            break
+#            break
         if i not in key_7:
             pass
         else:
             current_key = "key_7"
-            break
+#            break
         if i not in key_8:
             pass
         else:
             current_key = "key_8"
-            break
+#            break
         if i not in key_9:
             pass
         else:
             current_key = "key_9"
-            break
-    if current_key[i] == current_key[i-1]:
-        wait_time += 1
-    i += 1
+#            break
+    for i in speech:
+        if current_key[i] == current_key[i-1]:
+            wait_time += 1
+        i += 1
 
+print(speech)
 print(wait_time)
-
-
