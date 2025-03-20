@@ -45,14 +45,56 @@ wait_time = 0    # result
 
 count_1 = 0
 count_2 = 0
+repeated = []
 
-def funkcija():
+#def funkcija():
+for word in user_input:
 
-    for i in user_input:
-        if i in list_a:
-            count_1 += 1
-        elif i in list_b:
-            count_2 += 1
+    for letter in word:
+        #print(i)
+        if letter in list_a:
+            count_1 += 1    # this is actually not required, just a checkup on test
+            repeated.append("test_1")    # test try 1
+        elif letter in list_b:
+            count_2 += 1    # this is actually not required, it is only of interest if thing works
+            repeated.append("test_2")    # try out test
+        #letter += 1
+
+test_wait_time = 0
+print(repeated)    # i need this check for a test    # this works so far
+
+for number in repeated:
+    i = 0
+    while i < len(number) -1:    # edited out "-1" # added "-1" again
+        if number[i] == number[i + 1]:    # how to fix this line so it would check if two consecutive things are the same  # this is still giving me much troubles  # still troubles
+            print("the number counting works correctly")
+            test_wait_time += 1
+
         i += 1
+#        else:
+#            pass    # editing out "else" part
+
+
+key_mappings = {
+    " ": 1,
+    "a": 2,
+    "b": 2,
+}
+test_string = "abba baba"
+key_list = [key_mappings[c] for c in test_string]
+
+print(key_list)
+
+
+#    i +=1    # this one was not needed
+print(test_wait_time)
+
+print(wait_time)    # best hopes    # no it does not work yet
+
+print(repeated)    # test so far so good
+
+
 print(count_1, count_2)
+
+#print(word, i)    # this is no longer needed for a checkup
 
