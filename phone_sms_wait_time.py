@@ -2,7 +2,6 @@ import sys
 
 speech = sys.argv[1:]
 
-
 keys = {" " : 1,
         "a" : 2, "b" : 2, "c" : 2,
         "d" : 3, "e" : 3, "f" : 3,
@@ -15,7 +14,7 @@ keys = {" " : 1,
 }
 
 print("This is the input: ", speech)
-wait_time = 0
+
 key_letters = []
 key_list = []
 
@@ -29,3 +28,4 @@ for letters in speech:    # each specific string on its own
 key_letters = sum([key_list[z] == key_list[z + 1] for z in range(len(key_list) - 1)])
 
 print("Wait time is: ", key_letters)    # test print to see where we are    #  it is already working wooo hooo
+    
