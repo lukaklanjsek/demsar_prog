@@ -44,14 +44,17 @@ for i in range(0, st_volilcev):
         try:
 
             glas = int(input(f"Vnesi glasove enega na enkrat: {i+1}.:"))
-            if 0 < glas <= max_st_kandidatov:
+            if 0 < glas <= st_kandidatov:
                glasovi_T.append(glas)
                break
             else:
-                print(f"Iščemo številko med 1 in {max_st_kandidatov}")
+                print(f"Iščemo številko med 1 in {st_kandidatov}")
         except ValueError:
             print("Prosim vnesite številko.")
 
 print("list of glasovi_T: ", glasovi_T)    # test print to see where we are
 
+import matplotlib.pyplot as plt
 
+plt.hist(glasovi_T)
+plt.show()
