@@ -98,3 +98,9 @@ print(count_1, count_2)
 
 #print(word, i)    # this is no longer needed for a checkup
 
+test_histogram = [1, 2, 1, 3, 1, 4, 2, 1, 4, 4, 1, 2, 1, 3, 3, 2, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4]
+
+import matplotlib.pyplot as plt
+
+plt.hist(test_histogram)
+plt.show()
