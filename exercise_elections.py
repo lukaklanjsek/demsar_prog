@@ -53,8 +53,15 @@ for i in range(0, st_volilcev):
             print("Prosim vnesite številko.")
 
 print("list of glasovi_T: ", glasovi_T)    # test print to see where we are
-
+"""
 import matplotlib.pyplot as plt
 
 plt.hist(glasovi_T)
 plt.show()
+"""
+rezultati = [[] for k in range(1, st_kandidatov)]
+
+print(rezultati)
+l = 0
+while l < len(glasovi_T):
+    break
