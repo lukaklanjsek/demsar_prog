@@ -102,13 +102,14 @@ print(count_1, count_2)
 
 #print(word, i)    # this is no longer needed for a checkup
 """
-test_st_kandidatov = 5
-test_histogram = [1, 2, 1, 3, 1, 4, 2, 1, 4, 4, 1, 2, 1, 3, 3, 2, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4]
+# test_st_kandidatov = 5
+# test_histogram = [1, 2, 1, 3, 1, 4, 2, 1, 4, 4, 1, 2, 1, 3, 3, 2, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4]
 """
 import matplotlib.pyplot as plt
 
 plt.hist(test_histogram)
 plt.show()
+"""
 """
 rezultati = [[] for k in range(1, test_st_kandidatov)]
 
@@ -119,3 +120,18 @@ while l < len(test_histogram):
         l += 1
 
 print(rezultati[0])
+"""
+test_value_1 = 15
+test_value_2 = 4
+test_value_3 = 2
+test_value_4 = 0
+
+
+test_value_2 += test_value_1 // 4
+test_value_1 = test_value_1 % 4
+test_value_3 += test_value_2 // 3
+test_value_2 = test_value_2 % 3
+test_value_4 += test_value_3 // 4
+test_value_3 = test_value_3 % 3
+
+print(test_value_4, test_value_3, test_value_2, test_value_1)
