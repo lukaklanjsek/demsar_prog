@@ -61,6 +61,9 @@ plt.show()
 """
 rezultati = [[] for k in range(1, st_kandidatov)]
 
+l = 0
+while l < len(glasovi_T):
+    break
 print(rezultati)
 l = 0
 while l < len(glasovi_T):
