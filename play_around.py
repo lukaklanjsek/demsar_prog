@@ -13,6 +13,8 @@ print(z)
 for e in z:  #why 'e' works???
     print(e)
 '''
+from exercise_elections import st_kandidatov
+
 """
 import sys
 print(sys.version)
@@ -36,6 +38,7 @@ print(sys.argv)
 txt = "The best things in life are free!"
 print("free" in txt)
 """
+"""
 user_input = ["bacil", "cilba", "bilca"]
 
 list_a = ["a", "b", "c"]
@@ -46,7 +49,8 @@ wait_time = 0    # result
 count_1 = 0
 count_2 = 0
 repeated = []
-
+"""
+"""
 #def funkcija():
 for word in user_input:
 
@@ -97,10 +101,21 @@ print(repeated)    # test so far so good
 print(count_1, count_2)
 
 #print(word, i)    # this is no longer needed for a checkup
-
+"""
+test_st_kandidatov = 5
 test_histogram = [1, 2, 1, 3, 1, 4, 2, 1, 4, 4, 1, 2, 1, 3, 3, 2, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4]
-
+"""
 import matplotlib.pyplot as plt
 
 plt.hist(test_histogram)
 plt.show()
+"""
+rezultati = [[] for k in range(1, test_st_kandidatov)]
+
+l = 0
+while l < len(test_histogram):
+    for m in test_histogram:
+        rezultati[l].append("*")
+        l += 1
+
+print(rezultati[0])
