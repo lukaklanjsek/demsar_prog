@@ -1,6 +1,6 @@
 """
 Write a program, that would use standard input of ten rows with seven numbers,
-followed by a row of ten numbers, that would tell order sufficiency.
+followed by a row of seven numbers, that would tell order sufficiency.
 input values order: lige, milje, furlongi, jardi, čevlji, dlani, palci
 by the relations between values:
     1 liga = 3 milje,
@@ -24,7 +24,7 @@ palci = 0
 
 print("Hello and welcome the recalculations exercise. Please enter your 10 orders:")
 
-for i in range(0, 1):
+for i in range(0, 10):    # for different amount of input lines, change the "10"
     while True:
         try:
             liga, milja, furlong, jard, cevelj, dlan, palec = map(int, input(f"Order count {i+1} (seven numbers): ").split())
@@ -41,7 +41,6 @@ for i in range(0, 1):
         except ValueError:
             print("please enter 7 numbers")
 
-print("pre-calc: ", lige, milje, furlongi, jardi, cevlji, dlani, palci)    # test print
 
 dlani += palci // 4
 palci = palci % 4
@@ -56,7 +55,7 @@ furlongi = furlongi % 8
 lige += milje // 3
 milje = milje % 3
 
-print("post-calc: ", lige, milje, furlongi, jardi, cevlji, dlani, palci)    # test print II
+# print("post-calc orders: ", lige, milje, furlongi, jardi, cevlji, dlani, palci)    # test print II
 
 lige1, milje1, furlongi1, jardi1, cevlji1, dlani1, palci1 = 0, 0, 0, 0, 0, 0, 0
 
@@ -67,32 +66,55 @@ while True:
     except ValueError:
         print("please enter 7 collected numbers")
 
-while True:
-     if True:
-        lige == lige1
-        milje == milje1
-        furlongi == furlongi1
-        jardi == jardi1
-        cevlji == cevlji1
-        dlani == dlani1
-        palci == palci1
-        print("Narocil si ravno prav blaga")
-        break
-     elif lige < lige1 and  milje < milje1 and  furlongi < furlongi1 and jardi < jardi1 and  cevlji < cevlji1 and  dlani < dlani1 and  palci < palci1:
-            print("Narocil si *** prevec blaga")
-            break
-     else:
-         print("Narocil si *** premalo blaga")
-         break
+# print("Test print pre-calc factory order input:", lige1, milje1, furlongi1, jardi1, cevlji1, dlani1, palci1)    # test print
 
-"""
-                elif True:
-                lige > lige1
-                milje > milje1
-                furlongi > furlongi1
-                jardi > jardi1
-                cevlji > cevlji1
-                dlani > dlani1
-                palci > palci1
-                print("Narocil si *** premalo blaga")
-"""
+dlani1 += palci1 // 4
+palci1 = palci1 % 4
+cevlji1 += dlani1 // 3
+dlani1 = dlani1 % 3
+jardi1 += cevlji1 // 3
+cevlji1 = cevlji1 % 3
+furlongi1 += jardi1 // 220
+jardi1 = jardi1 % 220
+milje1 += furlongi1 // 8
+furlongi1 = furlongi1 % 8
+lige1 += milje1 // 3
+milje1 = milje1 % 3
+
+print("post calc factory input", lige1, milje1, furlongi1, jardi1, cevlji1, dlani1, palci1)    # test print
+
+list_before = [lige, milje, furlongi, jardi, cevlji, dlani, palci]
+list_after = [lige1, milje1, furlongi1, jardi1, cevlji1, dlani1, palci1]
+
+differences = [(x-y) for x, y in zip(list_before, list_after)]    # če je pozitivna je naročenega premalo
+
+
+def check_variables(stevilka):
+    if stevilka > 0:
+        return "positive"
+    elif stevilka < 0:
+        return "negative"
+    else:
+        return "zero"
+
+if_positive = False
+if_negative = False
+if_zero = False
+
+for stev in differences:
+    if check_variables(stev) == "positive":
+        if_positive = True
+        break
+    elif check_variables(stev) == "negative":
+        if_negative = True
+        break
+    else:
+        if_zero = True
+
+# final response
+if if_positive == True:
+    print(f"Narocil si {differences} premalo blaga")
+elif if_negative == True:
+    print(f"Narocil si {differences} prevec blaga")
+else:
+    print("Narocil si ravno prav blaga")
