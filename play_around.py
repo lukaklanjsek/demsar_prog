@@ -35,7 +35,7 @@ print(sys.argv)
 
 txt = "The best things in life are free!"
 print("free" in txt)
-"""
+
 user_input = ["bacil", "cilba", "bilca"]
 
 list_a = ["a", "b", "c"]
@@ -97,16 +97,16 @@ print(repeated)    # test so far so good
 print(count_1, count_2)
 
 #print(word, i)    # this is no longer needed for a checkup
-"""
+
 # test_st_kandidatov = 5
 # test_histogram = [1, 2, 1, 3, 1, 4, 2, 1, 4, 4, 1, 2, 1, 3, 3, 2, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4, 1, 1, 1, 2, 2, 2, 3, 3, 4]
-"""
+
 import matplotlib.pyplot as plt
 
 plt.hist(test_histogram)
 plt.show()
-"""
-"""
+
+
 rezultati = [[] for k in range(1, test_st_kandidatov)]
 
 l = 0
@@ -116,7 +116,7 @@ while l < len(test_histogram):
         l += 1
 
 print(rezultati[0])
-"""
+
 test_value_1 = 15
 test_value_2 = 4
 test_value_3 = 2
@@ -131,3 +131,40 @@ test_value_4 += test_value_3 // 4
 test_value_3 = test_value_3 % 3
 
 print(test_value_4, test_value_3, test_value_2, test_value_1)
+"""
+test_glasovi = [1, 3, 2, 4, 1, 4, 7, 6, 1, 2]
+test_length = len(test_glasovi)
+# print(test_length, type(test_length))
+test_results = list(range(len(test_glasovi)))
+# print(test_results, "test print")
+test_results2 = [None] * test_length
+# print("test print", test_results2)
+# def test_arrangements():
+test_results3 = []
+c = 0
+for b in test_glasovi:
+    test_results3.append(str(c+1)+':')
+    c += 1
+
+    """for d in test_results3:
+        d = str(d)
+        d = d + :"""
+print("test print 3", test_results3)
+test_kandidati = 7
+test_results4 = [f"{e+1}:" for e in range(test_kandidati)]    # range sem sam dodal, ostalo skopiral od nekod
+print("test print 4", test_results4)
+
+g = 0
+while g < len(test_glasovi):
+    for h in test_glasovi:
+        [f"*"]
+
+    g +=1
+
+
+
+# for a in test_glasovi:
+
+    #test_results2.insert(a, '*')
+# print("test print where we are", test_results2)
+
