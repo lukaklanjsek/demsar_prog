@@ -12,16 +12,12 @@ begin
  ...
 end;
 """
-
 # begin:
-
 max_st_volilcev = int(input("Najvecje stevilo volilcev je: "))
 
 max_st_kandidatov = int(input("Najvecje stevilo kandidatov je: "))
 st_volilcev = 0
 st_kandidatov = 0
-
-
 
 while True:
     st_kandidatov = int(input("Koliko je dejanskih kandidatov: " ))
@@ -29,10 +25,6 @@ while True:
         break
     else:
         print(f"Vnos dejanskega števila kandidatov, med 1 in {max_st_kandidatov}")
-
-#list_of_candidates = [list() for a in range(st_kandidatov)]
-#print(list_of_candidates)    # test print to see where we are
-
 
 while True:
     st_volilcev = int(input("Koliko vas dejansko voli: "))
@@ -46,7 +38,6 @@ i = 0
 for i in range(0, st_volilcev):
     while True:
         try:
-
             glas = int(input(f"Vnesi glasove enega na enkrat: {i+1}.:"))
             if 0 < glas <= st_kandidatov:
                 glasovi_T.append(glas)
@@ -56,35 +47,13 @@ for i in range(0, st_volilcev):
         except ValueError:
             print("Prosim vnesite številko.")
 
-print("list of glasovi_T: ", glasovi_T)    # test print to see where we are
+candidates_list = [a+1 for a in range(st_kandidatov)]
 
+votes_counter = dict.fromkeys(candidates_list, str())
 
+for glas2 in glasovi_T:
+    votes_counter[glas2] = votes_counter[glas2] + str("*")
 
-
-
-#number_of_arguments = len(glasovi_T)
-
-#def the_spread():
-#    for a in glasovi_T:
-
-#for n in glasovi_T:
-
-#    list_of_candidates.insert("n", "*")
-#    break
-#print(list_of_candidates[0])
-
-"""
-import matplotlib.pyplot as plt
-
-plt.hist(glasovi_T)
-plt.show()
-"""
-# rezultati = [[] for k in range(1, st_kandidatov)]
-
-#l = 0
-#while l < len(glasovi_T):
-#    break
-#print(rezultati)
-#l = 0
-#while l < len(glasovi_T):
-#    break
+for b in votes_counter:
+    print(b,":", votes_counter[b])
+# end;

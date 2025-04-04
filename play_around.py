@@ -13,6 +13,8 @@ print(z)
 for e in z:  #why 'e' works???
     print(e)
 '''
+from tokenize import blank_re
+
 """
 import sys
 print(sys.version)
@@ -22,8 +24,6 @@ print(sys.argv)
 the_message = (sys.stdin)
 
 print(the_message, type(the_message))
-
-
 
 #for line in sys.stdin:
 #    if 'q' == line.rstrip():
@@ -74,7 +74,6 @@ for number in repeated:
 #        else:
 #            pass    # editing out "else" part
 
-
 key_mappings = {
     " ": 1,
     "a": 2,
@@ -84,7 +83,6 @@ test_string = "abba baba"
 key_list = [key_mappings[c] for c in test_string]
 
 print(key_list)
-
 
 #    i +=1    # this one was not needed
 print(test_wait_time)
@@ -106,7 +104,6 @@ import matplotlib.pyplot as plt
 plt.hist(test_histogram)
 plt.show()
 
-
 rezultati = [[] for k in range(1, test_st_kandidatov)]
 
 l = 0
@@ -122,7 +119,6 @@ test_value_2 = 4
 test_value_3 = 2
 test_value_4 = 0
 
-
 test_value_2 += test_value_1 // 4
 test_value_1 = test_value_1 % 4
 test_value_3 += test_value_2 // 3
@@ -131,7 +127,7 @@ test_value_4 += test_value_3 // 4
 test_value_3 = test_value_3 % 3
 
 print(test_value_4, test_value_3, test_value_2, test_value_1)
-"""
+
 test_glasovi = [1, 3, 2, 4, 1, 4, 7, 6, 1, 2]
 test_length = len(test_glasovi)
 # print(test_length, type(test_length))
@@ -146,25 +142,53 @@ for b in test_glasovi:
     test_results3.append(str(c+1)+':')
     c += 1
 
-    """for d in test_results3:
+    for d in test_results3:
         d = str(d)
-        d = d + :"""
-print("test print 3", test_results3)
+        d = d + :
+print("test print 3 - number of votes", test_results3)
 test_kandidati = 7
 test_results4 = [f"{e+1}:" for e in range(test_kandidati)]    # range sem sam dodal, ostalo skopiral od nekod
-print("test print 4", test_results4)
+print("test print 4 - variation of votes", test_results4)
 
 g = 0
 while g < len(test_glasovi):
     for h in test_glasovi:
-        [f"*"]
+        test_results4 = [f"{test_results4[h-1]}" + "*" for h in test_glasovi]
 
     g +=1
+i = 0
+k = 0
+while i < test_kandidati:
+    print("test print 5", test_results4[k])
+    i += 1
+    k += 1
 
-
+print("test print 4", test_results4)
 
 # for a in test_glasovi:
 
     #test_results2.insert(a, '*')
 # print("test print where we are", test_results2)
 
+test_candidates = 7
+#test_votes_counter = {}
+#while len(votes_counter) < candidates:
+#    keys = [f"{l+1}:" for l in range(candidates)]
+#    values =
+#test_votes_counter2 = dict.fromkeys(test_results4)
+#print("test print dict votes counter", votes_counter2)
+
+test_results5 = [e+1 for e in range(test_candidates)]
+print("test results 5:", test_results5)
+test_votes_counter3 = dict.fromkeys(test_results5, str())
+print("test votes counter 3", test_votes_counter3)    # yay it works, so far so good
+
+for m in test_glasovi:
+    test_votes_counter3[m] = test_votes_counter3[m] + str('*')
+
+print("test print final??:", test_votes_counter3)
+
+for n in test_votes_counter3:
+    print(n, ":", test_votes_counter3[n])
+"""
+# all of test code commented in so I can ust this file again for testing in the future.
