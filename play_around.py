@@ -13,7 +13,7 @@ print(z)
 for e in z:  #why 'e' works???
     print(e)
 '''
-from tokenize import blank_re
+# from tokenize import blank_re
 
 """
 import sys
@@ -191,4 +191,10 @@ print("test print final??:", test_votes_counter3)
 for n in test_votes_counter3:
     print(n, ":", test_votes_counter3[n])
 """
-# all of test code commented in so I can ust this file again for testing in the future.
+# all of test code commented in so I can use this file again for testing in the future.
+
+#f = open("example.txt", "r")
+#print(f.readline())
+#for x in f:
+#  print(x)
+#f.close()
