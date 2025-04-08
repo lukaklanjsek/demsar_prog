@@ -198,3 +198,32 @@ for n in test_votes_counter3:
 #for x in f:
 #  print(x)
 #f.close()
+"""
+test_dict = {"Luka" : 5, "Matija" : 2, "Urša" : 1, "Leopold" : 3, "Karla" : 4}
+sorted_test_dict = dict(sorted(test_dict.items(), key=lambda item: item[1], reverse=False))
+print(sorted_test_dict)    # okay this works now finally yay big happy
+"""
+###
+
+test_file = open("example.txt", "r")
+test_index = 0
+test_existing_billboard = []
+while test_index < 10:
+    test_existing_billboard.append(test_file.readline())
+    test_index += 1
+print("wat?", test_existing_billboard)    # lets see what we are working with
+print("lets se ewhat we are working with:", type(test_existing_billboard))
+
+
+"""
+test_ind = 0
+test_billboard = {}
+while test_ind < 10:
+    for test_entry in test_existing_billboard:
+        test_name_var, test_result_var, *test_rank_var = map(str, test_existing_billboard.split(" "))
+        # result_var = int(result_var)    #would maybe work without this line and declaring integer in the next line???
+        test_billboard[test_name_var] = test_result_var
+    test_ind += 1
+"""
+#print(test_billboard)
+test_file.close()
