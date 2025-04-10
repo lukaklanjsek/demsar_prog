@@ -1,5 +1,51 @@
-import sys
+#import sys
 
+#new_line = (sys.argv[1:].split())    # TEMPORARY !!    # UNCOMMENT THIS TO MAKE IT BONK
+new_line = tuple(input("name and shoe size + your weight please: ").split())     # <- dont forget to yeet this line
+
+existing_billboard = open("example.txt", "r")
+billboard = []
+
+ind = 0
+while ind < 10:
+    billboard.append(tuple(existing_billboard.readline().split()))
+    ind += 1
+
+existing_billboard.close()
+#print(billboard)    # test print    <- dont forget to yeet this line
+
+billboard.append(new_line)
+
+#print(billboard)     # test print    <- dont forget to yeet this line
+
+sorted_billboard = sorted(billboard, key=lambda a: a[1])
+print("SORTED", sorted_billboard)    # test pint please remove    <- dont forget to yeet this line
+
+#new_billboard = open("example.txt", "w")
+
+ind2 = 0
+for values in sorted_billboard:
+    for values2 in values:
+        " ".join(values2)
+
+print(sorted_billboard)
+
+
+#for values in sorted_billboard:
+#    for items in sorted_billboard:
+#        new_billboard.write(f"{*items}\n")
+#        print(f"{items}\n")     # TEST PRINT
+
+
+#new_billboard.close()
+
+
+
+
+
+
+# I have commented in all of the below code because I am rewriting everything from dictionaries and lists into lists and tuples
+"""
 file_name_var = ""    # let's see if we need this
 name_var = ""
 result_var = 0
@@ -96,4 +142,4 @@ print("test print, can stay: ", billboard)    # test print: lets see where we ar
 #sorted_billboard = dict(sorted(billboard_to_sort.items(), key=lambda item: item[1]))    #this will have to wait a bit
 #print("test print where we are?", sorted_billboard)    # test print where we are
 
-
+"""
