@@ -1,29 +1,21 @@
 import sys
+import json
 
 new_line = " ".join(sys.argv[1:]).split()
+#new_line = input("enter name, score and category:")     # TEST INPUT VALUE BY CONSOLE    <- do we need this?
 
-existing_billboard = open("example.txt", "r")
-billboard = []
+with open("example.json", "r") as test_file:
+    existing_billboard = json.load(test_file)
 
-ind = 0
-while ind < 10:
-    billboard.append(tuple(existing_billboard.readline().split()))
-    ind += 1
+name, score, category = map(str, new_line.split())
+length_billboard = len(existing_billboard)
 
-existing_billboard.close()
+entry11 = {f"entry{length_billboard+1}": {"name": name, "score": score, "category": category}}
+existing_billboard.update(entry11)
+sorted_billboard = list(sorted(existing_billboard.items(), key=lambda item: item[1]["score"]))
 
-billboard.append(new_line)
+sorted_billboard = sorted_billboard[:10]
 
-sorted_billboard = sorted(billboard, key=lambda a: a[1])
-
-billboard_list = [list(t) for t in sorted_billboard]
-
-combined_billboard = [' '.join(sublist) + "\n" for sublist in billboard_list]
-
-combined_billboard = combined_billboard[:10]
-
-new_billboard = open("example.txt", "w")
-
-new_billboard.writelines(combined_billboard)
-
-new_billboard.close()
+with open("example.json", "w") as outfile:
+    json.dump(sorted_billboard, outfile, indent=2)
+    print(f"Successfully added {new_line} to the score board.")
