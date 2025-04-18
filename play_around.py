@@ -202,7 +202,7 @@ for n in test_votes_counter3:
 test_dict = {"Luka" : 5, "Matija" : 2, "Urša" : 1, "Leopold" : 3, "Karla" : 4}
 sorted_test_dict = dict(sorted(test_dict.items(), key=lambda item: item[1], reverse=False))
 print(sorted_test_dict)    # okay this works now finally yay big happy
-"""
+
 ###
 
 test_file = open("example.txt", "r")
@@ -215,7 +215,7 @@ print("wat?", test_existing_billboard)    # lets see what we are working with
 print("lets se ewhat we are working with:", type(test_existing_billboard))
 
 
-"""
+
 test_ind = 0
 test_billboard = {}
 while test_ind < 10:
@@ -226,4 +226,57 @@ while test_ind < 10:
     test_ind += 1
 """
 #print(test_billboard)
-test_file.close()
+#test_file.close()
+
+import json
+
+# txt_data = "I like pizza!"
+# employees = ["Eugene", "Squidward", "Spongebob", "Patrick"]
+#employed = {
+#    "name": "Spongebob",
+#    "age": 30,
+#    "job": "cook"
+#}
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+file_name = "example.txt"
+test_dictionary = {}
+designatories = ["name", "score", "category"]
+with open(file_name) as test_file:
+    lin = 1
+    for line in test_file:
+        description = list(line.strip().split(None, 3))
+        print(description)
+        sno = "entry"+str(lin)
+        i = 0
+        test_dictionary2 = {}
+        while i < len(designatories):
+            test_dictionary2[designatories[i]] = description[i]
+            i += 1
+        test_dictionary[sno] = test_dictionary2
+        lin += 1
+test_out_file = open("example.json", "w")
+json.dump(test_dictionary, test_out_file, indent=2)
+test_out_file.close()
+
+
+file_path = "example.json"
+
+try:
+    with open(file= file_path, mode= "w", encoding= "utf-8") as opened_file:
+        json.dump(employed, opened_file, indent= 2)
+    print(f"json file '{file_path}' was created.")
+except FileExistsError:
+    print("That file already exists.")
+"""
